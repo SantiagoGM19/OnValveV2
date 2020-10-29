@@ -26,8 +26,8 @@ public class Iniciar_sesion extends AppCompatActivity
     private  FirebaseAuth Auth;
 
 
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
+    public static FirebaseDatabase firebaseDatabase;
+    public static DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

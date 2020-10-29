@@ -20,7 +20,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class agregar_valvula extends AppCompatActivity {
-    private EditText txtnombre_valvula;
+    public static EditText txtnombre_valvula;
     private EditText txtFabricante;
     private EditText txtSerial;
     private EditText txtCorreoElectronicoUser;
@@ -95,13 +95,12 @@ public class agregar_valvula extends AppCompatActivity {
             {
             Valvula NewValvula = new Valvula(nombre, fabricante, serial, correoElectronicoUsuario, ValvulaId);
             databaseReference.child("Valvulas").child(NewValvula.getvalvulaId()).setValue(NewValvula);
-
-            Intent main = new Intent(this, perfil_usuario.class);
-            main.putExtra("ValvulaCreada", NewValvula.getNombre());
             txtnombre_valvula.setText("");
             txtFabricante.setText("");
             txtSerial.setText("");
             txtCorreoElectronicoUser.setText("");
+            perfil_usuario.ActivarValvula();
+
 
             
 

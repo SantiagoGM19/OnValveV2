@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.Locale;
-
 public class Temporizador extends AppCompatActivity {
     private TextView temporizadorTxt;
     private Button temporizadorBtt;
@@ -51,17 +49,17 @@ public class Temporizador extends AppCompatActivity {
         cuentaRegresiva = new CountDownTimer(tiempoRestante, 1000) {
             @Override
             public void onTick(long milisUntilFinished) {
-                tiempoRestante =milisUntilFinished;
+                tiempoRestante =1;
                 actualizarTiempo();
             }
 
             @Override
             public void onFinish() {
-                tiempoCorriendo=false;
 
             }
 
-        }.start();
+        };
+        cuentaRegresiva.start();
         tiempoCorriendo = true;
     }
     public void  pararTiempo(){
@@ -71,11 +69,16 @@ public class Temporizador extends AppCompatActivity {
     }
 
     public void actualizarTiempo(){
-        int minutos = (int) (tiempoRestante/1000)/60;
-        int segundos = (int) (tiempoRestante/1000)%1000;
+        int minutos = (int) tiempoRestante/60000;
+        int segundos = (int) tiempoRestante%60000/1000;
 
-        String tiempoRestanteFormato= String.format(Locale.getDefault(),"%02d:%02d", minutos,segundos);
-        temporizadorTxt.setText(tiempoRestanteFormato);
+        String tiempoRestanteTxt;
 
+        tiempoRestanteTxt = "" + minutos;
+        tiempoRestanteTxt = ":";
+        if (segundos<10) tiempoRestanteTxt += "0";
+        tiempoRestanteTxt += segundos;
+
+        temporizadorTxt.setText(tiempoRestanteTxt);
     }
 }
