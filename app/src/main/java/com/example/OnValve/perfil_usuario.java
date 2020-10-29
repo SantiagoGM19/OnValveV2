@@ -16,10 +16,9 @@ import android.widget.TextView;
 
 public class perfil_usuario extends AppCompatActivity
 {
-    public static HorizontalScrollView ContainerHorizontal;
+    private HorizontalScrollView ContainerHorizontal;
     private LinearLayout LyoutGaraje;
     private TextView viewe;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

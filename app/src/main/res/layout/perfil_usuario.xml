@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LyoutGaraje"
@@ -10,53 +10,36 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="379dp"
-        android:layout_height="131dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Garaje de válvulas"
         android:textAlignment="center"
         android:textSize="55dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="134dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="209dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="IrRegistrarValvula"
-        android:text="Agregar nueva válvula"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+        android:text="Agregar nueva válvula" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:onClick="ActualizarGaraje"
         android:text="Actualizar garaje"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="MissingConstraints" />
+        android:onClick="ActualizarGaraje"/>
 
     <HorizontalScrollView
         android:id="@+id/ContainerHorizontal"
-        android:layout_width="404dp"
-        android:layout_height="123dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.107"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="match_parent"
+        android:layout_height="66dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
