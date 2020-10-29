@@ -58,7 +58,7 @@ public class Temporizador extends AppCompatActivity {
             @Override
             public void onFinish() {
                 tiempoCorriendo=false;
-                Temporizador.this.recreate();
+
             }
 
         }.start();
