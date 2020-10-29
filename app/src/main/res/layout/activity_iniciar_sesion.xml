@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".Iniciar_sesion">
+
+    <ImageButton
+        android:id="@+id/btnInicioApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/abc_vector_test"
+        android:onClick="IrAtrasInicio"
+        tools:srcCompat="?attr/actionModeCloseDrawable"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="388dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:paddingTop="40dp"
+        android:text="BIENVENIDO"
+        android:textAlignment="center"
+        android:textColor="#4FC3F7"
+        android:textIsSelectable="false"
+        android:textSize="55dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Por favor ingrese sus datos personales" />
+
+
+    <EditText
+        android:id="@+id/txtCorreoElectronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4DD0E1"
+        android:onClick="IniciarSesion"
+        android:text="Iniciar sesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+</LinearLayout>
