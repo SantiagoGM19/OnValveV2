@@ -100,10 +100,7 @@ public class agregar_valvula extends AppCompatActivity {
             txtSerial.setText("");
             txtCorreoElectronicoUser.setText("");
             perfil_usuario.ActivarValvula();
-
-
-            
-
+            startActivity(new Intent(this, EstadoValvula.class));
             Toast.makeText(this, "Datos guardados correctamente", Toast.LENGTH_SHORT).show();
         }
     }
