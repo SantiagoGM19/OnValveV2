@@ -13,30 +13,40 @@
         android:id="@+id/btnInicioApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#41A400"
+        android:tint="#FFFFFF"
         app:srcCompat="@drawable/abc_vector_test"
         tools:srcCompat="?attr/actionModeCloseDrawable"
         android:onClick="IrAtrasInicio"/>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="388dp"
-        android:layout_height="142dp"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:lineSpacingExtra="10sp"
+        android:lineSpacingExtra="8sp"
         android:paddingTop="40dp"
-        android:text="BIENVENIDO"
+        android:text="Registrarse"
+        android:textColor="#41A400"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="#4FC3F7"
         android:textIsSelectable="false"
-        android:textSize="55dp"
-        android:textStyle="bold" />
+        android:textSize="40dp"
+        />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16sp"
         android:text="Por favor ingrese sus datos personales" />
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
     <EditText
         android:id="@+id/txtNombres"
         android:layout_width="match_parent"
@@ -84,13 +94,24 @@
         android:layout_height="wrap_content"
         android:hint="Repetir contraseña"
         android:inputType="textPassword" />
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4DD0E1"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#41a400"
         android:onClick="Registrarse"
         android:text="@string/BotonRegistrarse"
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sin_t_tulo" />
 </LinearLayout>
