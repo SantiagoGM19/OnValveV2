@@ -1,4 +1,12 @@
 package com.example.OnValve.Modelo;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Usuario
 {
@@ -7,6 +15,7 @@ public class Usuario
     private String ciudad;
     private String correoElectronico;
     private String contraseña;
+    private List<Valvula> valvulas;
 
     public Usuario(String nombre, String apellido, String ciudad, String correoElectronico, String contraseña)
     {
@@ -15,6 +24,7 @@ public class Usuario
         this.setCiudad(ciudad);
         this.setCorreoElectronico(correoElectronico);
         this.setContraseña(contraseña);
+        this.valvulas = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -56,6 +66,10 @@ public class Usuario
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+
+    public List<Valvula> getValvulas(){return valvulas;}
+
+    public void setValvulas(Valvula valvula){this.valvulas.add(valvula);}
 
 }
 

@@ -48,8 +48,8 @@ public class Temporizador extends AppCompatActivity {
 
         cuentaRegresiva = new CountDownTimer(tiempoRestante, 1000) {
             @Override
-            public void onTick(long milisUntilFinished) {
-                tiempoRestante =1;
+            public void onTick(long millisUntilFinished) {
+                tiempoRestante = millisUntilFinished;
                 actualizarTiempo();
             }
 
