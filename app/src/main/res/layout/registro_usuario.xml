@@ -25,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:lineSpacingExtra="8sp"
-        android:paddingTop="40dp"
         android:text="Registrarse"
         android:textColor="#41A400"
         android:textStyle="bold"
@@ -109,6 +108,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
