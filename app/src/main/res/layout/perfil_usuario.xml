@@ -30,16 +30,19 @@
         android:layout_width="match_parent"
         android:layout_height="64dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="Actualizar garaje"
-        android:onClick="ActualizarGaraje"/>
-
     <HorizontalScrollView
         android:id="@+id/ContainerHorizontal"
         android:layout_width="match_parent"
         android:layout_height="66dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bttValcula1"
+        android:onClick="IrEstadoValvula"
+        android:visibility="invisible"
+        android:text=""
+        />
+
 
 </LinearLayout>

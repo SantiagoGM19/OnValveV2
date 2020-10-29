@@ -19,7 +19,7 @@ public class Valvula implements Serializable
         this.setSerial(Serial);
         this.setcorreoElectronicoUsuario(Correo_Electronico_user);
         this.setvalvulaId(valvulaId);
-        this.Estado = 1;
+        this.setEstado(1);
     }
 
     public String getNombre() {
@@ -49,7 +49,8 @@ public class Valvula implements Serializable
         return correoElectronicoUsuario;
     }
 
-    public void setcorreoElectronicoUsuario(String CorreoElectronicoUser) {
+    public void setcorreoElectronicoUsuario(String CorreoElectronicoUser)
+    {
         this.correoElectronicoUsuario = CorreoElectronicoUser;
     }
 
@@ -59,5 +60,14 @@ public class Valvula implements Serializable
 
     public void setvalvulaId(String valvulaId) {
         this.ValvulaId = valvulaId;
+    }
+
+    public int getEstado()
+    {
+        return Estado;
+    }
+    public void setEstado(int estado)
+    {
+        Estado = estado;
     }
 }
