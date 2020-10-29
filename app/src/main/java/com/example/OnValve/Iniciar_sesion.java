@@ -103,6 +103,11 @@ public class Iniciar_sesion extends AppCompatActivity
 
     }
 
+    public void RecuperarContraseña(View view)
+    {
+        startActivity(new Intent(this, RecuperarPasswordActivity.class));
+    }
+
     public void IrAtrasInicio(View view)
     {
         Intent Main = new Intent(this, MainActivity.class);

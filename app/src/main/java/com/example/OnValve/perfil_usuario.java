@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 public class perfil_usuario extends AppCompatActivity
 {
-    private Button temporizador;
     private HorizontalScrollView ContainerHorizontal;
     private LinearLayout LyoutGaraje;
     private TextView viewe;
@@ -27,11 +26,6 @@ public class perfil_usuario extends AppCompatActivity
         setContentView(R.layout.perfil_usuario);
         ContainerHorizontal = findViewById(R.id.ContainerHorizontal);
         LyoutGaraje = findViewById(R.id.LyoutGaraje);
-
-    }
-
-    public void IrTemporizador(View view){
-        startActivity(new Intent(this, Temporizador.class));
     }
 
     public void IrRegistrarValvula(View view)
