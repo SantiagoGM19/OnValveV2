@@ -9,6 +9,7 @@ public class Valvula implements Serializable
     private String serial;
     private String correoElectronicoUsuario;
     private String ValvulaId;
+    private int Estado;
 
 
     public Valvula(String Nombre, String Fabricante, String Serial, String Correo_Electronico_user, String valvulaId)
@@ -18,6 +19,7 @@ public class Valvula implements Serializable
         this.setSerial(Serial);
         this.setcorreoElectronicoUsuario(Correo_Electronico_user);
         this.setvalvulaId(valvulaId);
+        this.Estado = 1;
     }
 
     public String getNombre() {
